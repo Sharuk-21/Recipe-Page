@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --White-0: hsl(0, 0%, 100%);
+    --Stone-100: hsl(30, 54%, 90%);
+    --Stone-150: hsl(30, 18%, 87%);
+    --Stone-600: hsl(30, 10%, 34%);
+    --Stone-900: hsl(24, 5%, 18%);
+    --Brown-800: hsl(14, 45%, 36%);
+    --Rose-800: hsl(332, 51%, 32%);
+    --Rose-50: hsl(330, 100%, 98%);
+    --black-900: hsl(0, 0%, 0%);
+}
+
+body{
+    background: var(--Stone-100);
+    margin: 2rem;
+    padding: 1rem;
+    /* flex: 0 0 100%;
+    max-width: 100%; */
+    /* display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center; */
+    font-family: 'Outfit', sans-serif;
+}
+
+nav{
+    background: var(--White-0);
+    /* flex: 0 0 50%;
+    max-width: 50%; */
+    padding: 1rem;
+    margin: 1rem;
+    
+}
+
+nav img{
+    height: 320px;
+    max-width: 94%;
+    margin: 1rem;
+    border-radius: 10px;
+}
+
+/* nav, */ img, .content-box{
+    border-radius: 10px;
+}
+
+header h1{
+    color: var(--black-900);
+    margin: 1rem; 
+    font-size: 36px;
+}
+
+header p{
+    color: var(--Stone-900);
+    font-size: 16px;
+    margin-left: 1rem;
+}
+
+main .content{
+    margin: 2rem;
+}
+
+main .content-box{
+    margin-left: -1rem;
+    background: var(--Stone-100);
+    padding: 10px;
+}
+
+main .content-box h3{
+    margin-left: 1rem;
+    /* padding: 1rem; */
+    margin-bottom: 1rem;
+    color: var(--Brown-800);
+}
+
+main .content-box ul{
+    margin-left: 2rem;
+}
+
+main .content-box ul li{
+    margin-bottom: 8px;
+    color: var(--Stone-600);
+    padding-left: 1rem;
+}
+
+main .content-box ul strong{
+    color: var(--Stone-900);
+}
+
+main h2{
+    margin-left: -1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: var(--Brown-800);
+}
+
+main .row ul{
+    color: var(--Stone-600);
+}
+
+main .row ul li{
+    padding: 10px;
+}
+
+main .instruction ol li{
+    padding: 10px;
+    color: var(--Stone-600);
+}
+
+main .instruction ol li span{
+    font-weight: 800;
+    color: var(--Stone-900);
+}
+
+main .table p{
+    margin-left: -1rem;
+}
+
+main article{
+    margin: 1rem;
+}
+
+main article ul li{
+    border-bottom: 1px solid var(--Stone-150);
+    padding: 0.5rem 0;
+    margin: 1rem;
+    list-style: none;
+    margin-right: 8rem;
+}
+
+main article ul li:last-child{
+    border-bottom: none;
+}
+
+main article ul li span{
+    margin-left: 2rem;
+    position: absolute;
+    left: 600px;
+}
+
+.foot{
+    /* padding: 5px;
+    margin: -1rem; */
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 5rem;
+    margin-top: 8rem;
+}
+
+.foot p{
+    /* padding-left: 3rem; */
+    color: var(--Stone-600);
+}
+
+.foot p span{
+    color: orangered;
+}
+
+.foot p a{
+    text-decoration: none;
+}
+
+.foot a:hover{
+    color: red;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 1440px){
+    nav{
+        border-radius: 10px;
+        height: 1750px;
+    }
+    
+    img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    body{
+        display: block;
+        margin: 0;
+        padding: 0;
+        background: none;
+    }
+
+    nav{
+        border-radius: 0;
+    }
+
+    .container{
+        margin: 0;
+        padding: 0;
+        border-radius: none;
+        height: 100%;
+        width: 100%;
+    }
+
+    main article ul li{
+        margin-right: 0;
+        margin-right: 5rem;
+    }
+
+    main article ul li span{
+        margin-left: -10rem;
+    }
+
+    .foot{
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 425px){
+    body{
+        display: block;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        width: 700px;
+    }
+
+    .container{
+        padding: 2rem;
+        /* margin: 1rem; */
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    main article ul li{
+        margin-right: 0;
+    }
+
+    main article ul li span{
+        margin-left: -10rem;
+    }
+}
+
